@@ -12,3 +12,5 @@ No internet, no SIM, no account.
 - [Download from GitHub](https://github.com/MeshLive/meshlive-android/releases/latest)
 - [Source code](https://github.com/MeshLive/meshlive-android)
 - [Privacy policy](privacy/)
+- [Child safety standards](child-safety/)
+- Contact: [meshlive.dev@gmail.com](mailto:meshlive.dev@gmail.com)

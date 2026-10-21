@@ -65,5 +65,8 @@ Changes to this policy are published on this page and in the app's source code h
 
 ## Contact
 
-Questions or concerns: open an issue at
-[github.com/MeshLive/meshlive-android/issues](https://github.com/MeshLive/meshlive-android/issues).
+Questions or concerns: email [meshlive.dev@gmail.com](mailto:meshlive.dev@gmail.com) (also from **Settings > Contact us** in
+the app), or open an issue at [github.com/MeshLive/meshlive-android/issues](https://github.com/MeshLive/meshlive-android/issues).
+Contacting us sends an email from your own email app; we only see what you write.
+
+See also our [child safety standards](../child-safety/).
