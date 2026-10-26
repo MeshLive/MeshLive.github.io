@@ -1,4 +1,6 @@
 ---
+layout: doc
+description: "How MeshLive handles your information: nothing is collected, and everything stays on your phone."
 title: MeshLive privacy policy
 permalink: /privacy/
 ---

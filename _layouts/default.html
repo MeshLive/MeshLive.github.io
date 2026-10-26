@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_desc = page.description | default: site.description %}
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ page_desc | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/icon-192.png' | relative_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/icon.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/favicon.png' | relative_url }}" width="24" height="24" alt="">MeshLive</a>
+      <nav aria-label="Main">
+        <a href="{{ '/#platforms' | relative_url }}">Apps</a>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+        <a href="https://github.com/MeshLive">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+{{ content }}
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a> ·
+        <a href="{{ '/child-safety/' | relative_url }}">Child safety standards</a> ·
+        <a href="https://github.com/MeshLive">GitHub</a> ·
+        <a href="mailto:meshlive.dev@gmail.com">meshlive.dev@gmail.com</a>
+      </p>
+      <p class="muted">MeshLive is free and open source (GPL-3.0-or-later). Beta software: not independently audited, so do not rely on it where your safety depends on it.</p>
+    </div>
+  </footer>
+</body>
+</html>

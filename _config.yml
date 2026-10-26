@@ -1,3 +1,11 @@
 title: MeshLive
-description: Calls, chats and livestreams over a Bluetooth mesh. No internet, no SIM, no account.
-theme: jekyll-theme-minimal
+tagline: Calls, chats and livestreams over a Bluetooth mesh
+description: Calls, chats and livestreams over a Bluetooth mesh. Every phone passes it on, so you reach further than Bluetooth alone. No internet, no SIM, no account.
+url: https://meshlive.github.io
+lang: en
+
+# The site has its own layouts (_layouts/) and stylesheet (assets/site.css); there is no remote theme.
+exclude:
+  - README.md
+  - .gitattributes
+  - .gitignore

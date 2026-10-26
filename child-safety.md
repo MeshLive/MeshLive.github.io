@@ -1,4 +1,6 @@
 ---
+layout: doc
+description: "MeshLive child safety standards: zero tolerance for child sexual abuse and exploitation, and how to report a concern."
 title: MeshLive child safety standards
 permalink: /child-safety/
 ---

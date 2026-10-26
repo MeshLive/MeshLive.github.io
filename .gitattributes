@@ -1,0 +1,14 @@
+# Text files are stored and checked out with LF everywhere, so shell scripts run on Unix and tools that hash
+# source files (for example tools/prepare_native_workload.py) see the same bytes on every OS.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# Binary files
+*.jar binary
+*.webp binary
+*.png binary
+*.jpg binary
+*.wav binary
+*.flac binary
+*.so binary
+*.apk binary

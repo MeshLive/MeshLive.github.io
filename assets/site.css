@@ -1,0 +1,84 @@
+/* MeshLive site: functional minimal dark. Pure black and white; red only for "live". */
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #9a9a9a;
+  --line: #262626;
+  --card: #0d0d0d;
+  --live: #ff3b30;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--fg); text-underline-offset: 3px; text-decoration-color: #666; }
+a:hover { text-decoration-color: var(--fg); }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; border-radius: 4px; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--fg); color: var(--bg); padding: 8px 12px; z-index: 10; }
+.skip:focus { left: 8px; top: 8px; }
+.muted { color: var(--muted); }
+
+.top { border-bottom: 1px solid var(--line); }
+.bar { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: .01em; }
+.brand img { border-radius: 6px; }
+nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a:hover { color: var(--fg); }
+
+h1, h2, h3 { line-height: 1.2; font-weight: 700; margin: 0; }
+h1 { font-size: 34px; }
+h2 { font-size: 22px; margin: 48px 0 14px; }
+h3 { font-size: 17px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+ul { padding-left: 20px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+code { font: 14px ui-monospace, Consolas, monospace; background: #1a1a1a; padding: 1px 5px; border-radius: 4px; }
+
+.hero { text-align: center; padding: 56px 0 24px; }
+.hero img.icon { border-radius: 22px; border: 1px solid var(--line); }
+.hero h1 { font-size: 44px; margin: 18px 0 10px; }
+.hero .tag { font-size: 19px; color: #d6d6d6; margin: 0 auto 8px; max-width: 560px; }
+.live { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 700; letter-spacing: .08em; margin-bottom: 18px; }
+.live::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--live); }
+.buttons { margin: 26px 0 10px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.btn { display: inline-block; padding: 11px 20px; border-radius: 999px; border: 1px solid var(--fg); background: var(--fg); color: var(--bg); text-decoration: none; font-weight: 600; font-size: 15px; }
+.btn.ghost { background: transparent; color: var(--fg); border-color: #555; }
+.btn:hover { opacity: .88; }
+.shots { display: flex; gap: 12px; justify-content: safe center; margin: 36px 0 8px; overflow-x: auto; padding-bottom: 6px; }
+.shots img { height: 360px; width: auto; border-radius: 14px; border: 1px solid var(--line); flex: none; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.card h3 { margin-top: 0; }
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+td:first-child { white-space: nowrap; font-weight: 600; }
+.tablewrap { overflow-x: auto; }
+.status { display: inline-block; padding: 1px 9px; border: 1px solid #555; border-radius: 999px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.status.strong { border-color: var(--fg); }
+
+.diagram { display: block; width: 100%; max-width: 760px; height: auto; margin: 8px auto 4px; border-radius: 12px; }
+.notice { border: 1px solid #444; border-radius: 12px; padding: 14px 18px; margin: 26px 0; background: var(--card); }
+
+main > .wrap, main > article { padding-bottom: 40px; }
+article.doc { max-width: 760px; margin: 0 auto; padding: 36px 16px 56px; }
+article.doc h1 { font-size: 32px; margin-bottom: 8px; }
+article.doc h2 { margin-top: 36px; }
+
+footer { border-top: 1px solid var(--line); padding: 26px 0 40px; font-size: 14px; }
+footer p { margin: 0 0 8px; }
+
+@media (max-width: 560px) {
+  h1, .hero h1 { font-size: 34px; }
+  .shots img { height: 300px; }
+  nav a { margin-left: 12px; }
+}
