@@ -46,7 +46,10 @@ code { font: 14px ui-monospace, Consolas, monospace; background: #1a1a1a; paddin
 .hero .tag { font-size: 19px; color: #d6d6d6; margin: 0 auto 8px; max-width: 560px; }
 .live { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 700; letter-spacing: .08em; margin-bottom: 18px; }
 .live::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--live); }
-.buttons { margin: 26px 0 10px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.stores { margin: 26px 0 0; display: flex; justify-content: center; }
+.stores a { display: block; border-radius: 8px; }
+.stores img { display: block; height: 64px; width: auto; }
+.buttons { margin: 14px 0 10px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .btn { display: inline-block; padding: 11px 20px; border-radius: 999px; border: 1px solid var(--fg); background: var(--fg); color: var(--bg); text-decoration: none; font-weight: 600; font-size: 15px; }
 .btn.ghost { background: transparent; color: var(--fg); border-color: #555; }
 .btn:hover { opacity: .88; }
