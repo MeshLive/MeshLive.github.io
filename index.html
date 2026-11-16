@@ -2,119 +2,135 @@
 title: MeshLive
 layout: default
 ---
-<div class="wrap">
+<section class="wrap hero">
+  <div class="hero-text">
+    <h1>Video calls and livestreams, without the internet.</h1>
+    <p class="lead">MeshLive connects phones and laptops that are near each other, over Bluetooth. Every phone running it passes calls and streams along, so the more people use it, the further it reaches.</p>
+    <p class="lead-note">No internet, no SIM card, no account. Free.</p>
+    <div class="stores">
+      <a href="https://apps.apple.com/app/id6834136798"><img class="badge-apple" src="{{ '/assets/img/badges/app-store.svg' | relative_url }}" alt="Download on the App Store" height="48"></a>
+      <a href="https://play.google.com/store/apps/details?id=io.github.meshlive.app"><img class="badge-play" src="{{ '/assets/img/badges/google-play.png' | relative_url }}" alt="Get it on Google Play" height="72"></a>
+    </div>
+    <p class="also">Also on <a href="#computer">Windows</a>. Coming soon to the Mac.</p>
+  </div>
+  <figure class="video hero-video">
+    <a class="play" href="https://www.youtube.com/watch?v=W28Yt06zv7M" data-video="W28Yt06zv7M">
+      <img src="{{ '/assets/img/videos/W28Yt06zv7M.jpg' | relative_url }}" alt="">
+      <span class="livetag" aria-hidden="true">LIVE</span>
+      <span class="playicon" aria-hidden="true"></span>
+      <span class="sr">Play video: five phones, one live and the others watching</span>
+    </a>
+    <figcaption>Five phones: one goes live, the others watch and listen.</figcaption>
+  </figure>
+</section>
 
-<section class="hero">
-  <img class="icon" src="{{ '/assets/img/icon-192.png' | relative_url }}" width="96" height="96" alt="MeshLive icon">
-  <h1>MeshLive</h1>
-  <div class="live">LIVE, WITHOUT THE INTERNET</div>
-  <p class="tag">Calls, chats and livestreams over a Bluetooth mesh. Every phone passes it on, so you reach further than Bluetooth alone. No internet, no SIM, no account.</p>
-  <div class="stores">
-    <a href="https://play.google.com/store/apps/details?id=io.github.meshlive.app"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="64"></a>
-  </div>
-  <div class="buttons">
-    <a class="btn" href="https://github.com/MeshLive/meshlive-android/releases/latest">Download for Android</a>
-    <a class="btn ghost" href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/MeshLive/meshlive-android">Get it on Obtainium</a>
-    <a class="btn ghost" href="https://github.com/MeshLive">Source code</a>
-  </div>
-  <p class="muted">Free and open source · beta</p>
-  <div class="shots">
-    <img src="{{ '/assets/img/calls.png' | relative_url }}" alt="Calls: people nearby" loading="lazy">
-    <img src="{{ '/assets/img/live.png' | relative_url }}" alt="Live nearby" loading="lazy">
-    <img src="{{ '/assets/img/golive.png' | relative_url }}" alt="Go live: video, or audio only" loading="lazy">
-    <img src="{{ '/assets/img/settings.png' | relative_url }}" alt="Settings" loading="lazy">
+<section class="wrap section" id="download">
+  <h2>Get MeshLive</h2>
+  <p class="intro">It is the same app everywhere. An iPhone, an Android phone and a Windows laptop can all call each other and watch each other's livestreams.</p>
+  <div class="platforms">
+    <div class="group">
+      <h3>On your phone</h3>
+      <div class="phone-pair">
+        <figure class="device">
+          <img class="screen phone" src="{{ '/assets/img/iphone-calls.png' | relative_url }}" alt="MeshLive on an iPhone: people nearby you can call" loading="lazy" width="360" height="782">
+          <figcaption>
+            <strong>iPhone</strong>
+            <span>iOS 17 or later</span>
+            <a class="storelink" href="https://apps.apple.com/app/id6834136798"><img class="badge-apple" src="{{ '/assets/img/badges/app-store.svg' | relative_url }}" alt="Download on the App Store" height="48"></a>
+          </figcaption>
+        </figure>
+        <figure class="device">
+          <img class="screen phone" src="{{ '/assets/img/calls.png' | relative_url }}" alt="MeshLive on an Android phone: people nearby you can call" loading="lazy" width="360" height="780">
+          <figcaption>
+            <strong>Android</strong>
+            <span>Android 10 or later, in beta</span>
+            <a class="storelink" href="https://play.google.com/store/apps/details?id=io.github.meshlive.app"><img class="badge-play" src="{{ '/assets/img/badges/google-play.png' | relative_url }}" alt="Get it on Google Play" height="72"></a>
+            <span class="alt">Or get it from <a href="https://github.com/MeshLive/meshlive-android/releases/latest">GitHub</a> or <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/MeshLive/meshlive-android">Obtainium</a>. F-Droid coming soon.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="group" id="computer">
+      <h3>On your laptop or PC</h3>
+      <figure class="device">
+        <img class="screen window" src="{{ '/assets/img/windows-call.png' | relative_url }}" alt="MeshLive on Windows: a video call" loading="lazy" width="1000" height="720">
+        <figcaption>
+          <strong>Windows</strong>
+          <span>Windows 11 with Bluetooth, in beta</span>
+          <a class="btn" href="https://github.com/MeshLive/meshlive-windows/releases/latest">Download for Windows</a>
+          <span class="alt">Windows may ask you to confirm the first time you open it.</span>
+        </figcaption>
+      </figure>
+      <p class="mac"><strong>Mac</strong> Coming soon to the Mac App Store.</p>
+    </div>
   </div>
 </section>
 
-<h2>What it does</h2>
-<div class="grid">
-  <div class="card">
-    <h3>Calls</h3>
-    <ul>
-      <li>Voice and video calls with people nearby</li>
-      <li>End-to-end encrypted, phone to phone</li>
-      <li>Missed calls, call back, block unknown callers</li>
-    </ul>
+<section class="wrap section" id="videos">
+  <h2>See it working</h2>
+  <div class="video-row">
+    <figure class="video">
+      <a class="play" href="https://www.youtube.com/watch?v=I9_oEuNFcQE" data-video="I9_oEuNFcQE">
+        <img src="{{ '/assets/img/videos/I9_oEuNFcQE.jpg' | relative_url }}" alt="" loading="lazy">
+        <span class="playicon" aria-hidden="true"></span>
+        <span class="sr">Play video: two phones, a video call and a livestream</span>
+      </a>
+      <figcaption>Two phones: a video call, then a livestream.</figcaption>
+    </figure>
+    <figure class="video">
+      <a class="play" href="https://www.youtube.com/watch?v=47-NwaFXhkQ" data-video="47-NwaFXhkQ">
+        <img src="{{ '/assets/img/videos/47-NwaFXhkQ.jpg' | relative_url }}" alt="" loading="lazy">
+        <span class="playicon" aria-hidden="true"></span>
+        <span class="sr">Play video: a Windows laptop and an Android phone, a livestream and a video call</span>
+      </a>
+      <figcaption>A Windows laptop and an Android phone: a livestream and a video call.</figcaption>
+    </figure>
   </div>
-  <div class="card">
-    <h3>Livestream</h3>
-    <ul>
-      <li>Go live and share your camera with everyone around you</li>
-      <li>Audio only, like a local radio that keeps playing with the screen off</li>
-      <li>Phones in between pass your stream along</li>
-    </ul>
+</section>
+
+<section class="wrap section">
+  <h2>How it works</h2>
+  <div class="how">
+    <img class="diagram" src="{{ '/assets/img/mesh-how-it-works.png' | relative_url }}" alt="Four phones in a row about 20 metres apart. The first is live; each phone passes the stream to the next, so the reach is about 60 metres and grows with every phone." loading="lazy">
+    <dl class="points">
+      <div><dt>Calls and livestreams</dt><dd>Voice and video calls with people nearby. Go live with your camera, or with just your voice, like a local radio that keeps playing with the screen off.</dd></div>
+      <div><dt>No internet needed</dt><dd>Devices talk to each other directly over Bluetooth, up to about 10 to 30 metres apart.</dd></div>
+      <div><dt>Every phone passes it on</dt><dd>A livestream hops from phone to phone, so it reaches further with every person nearby who has MeshLive.</dd></div>
+      <div><dt>Private by design</dt><dd>Calls are end-to-end encrypted. There are no accounts, ads or servers.</dd></div>
+    </dl>
   </div>
-  <div class="card">
-    <h3>Contacts</h3>
-    <ul>
-      <li>Add people by scanning each other's code</li>
-      <li>Call them whenever they are nearby</li>
-      <li>Strangers only see a random name that changes every 15 minutes</li>
-    </ul>
+  <p class="usecases">Made for places without signal or Wi-Fi: hikes, festivals, trips, basements and emergencies.</p>
+</section>
+
+<section class="wrap section closing">
+  <div>
+  <h2>Privacy and safety</h2>
+  <p>Strangers nearby only see a random name that changes every 15 minutes. People you call, and people who watch your livestream, can see it is you. You can block anyone, and delete everything from your device in seconds.</p>
+  <p>MeshLive has not had an independent security audit yet, so do not rely on it when your safety depends on it.</p>
+  <p>Read the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a> and our <a href="{{ '/child-safety/' | relative_url }}">child safety standards</a>.</p>
   </div>
-  <div class="card">
-    <h3>Your privacy</h3>
-    <ul>
-      <li>No internet, SIM, account or server</li>
-      <li>Your calls never touch the internet</li>
-      <li>Delete everything from the phone in seconds</li>
-    </ul>
+  <div>
+  <h2>Help</h2>
+  <p>Questions, or something not working? See <a href="{{ '/support/' | relative_url }}">support</a> or email <a href="mailto:meshlive.dev@gmail.com">meshlive.dev@gmail.com</a>.</p>
+  <p>Step-by-step guides for <a href="https://github.com/MeshLive/meshlive-apple/blob/main/docs/user-guide.md">iPhone and Mac</a>, <a href="https://github.com/MeshLive/meshlive-android/blob/main/docs/user-guide.md">Android</a> and <a href="https://github.com/MeshLive/meshlive-windows/blob/main/docs/user-guide.md">Windows</a>.</p>
   </div>
-</div>
-<p style="margin-top:14px">Made for places with no signal or Wi-Fi: hikes, festivals, trips, basements, and emergencies.</p>
+  <div>
+  <h2>Open source</h2>
+  <p>MeshLive is free and open source. The code is on GitHub for <a href="https://github.com/MeshLive/meshlive-android">Android</a>, <a href="https://github.com/MeshLive/meshlive-apple">iPhone and Mac</a> and <a href="https://github.com/MeshLive/meshlive-windows">Windows</a>, with our <a href="https://meshlive.github.io/meshlive-benchmarks/">test results</a>. Want to help? Start with the <a href="https://github.com/MeshLive/.github/blob/main/CONTRIBUTING.md">contributing guide</a>, or tell us how it works on your device with a <a href="https://github.com/MeshLive/meshlive-android/issues/new/choose">device report</a>.</p>
+  </div>
+</section>
 
-<h2>How it works</h2>
-<p>Bluetooth on its own reaches about 10 to 30 metres. MeshLive turns every phone running it into a relay: your livestream or call hops from phone to phone, so the more people around you use MeshLive, the further you reach. Each hop adds a little delay and Bluetooth is slow, so video is small; audio-only streams reach the furthest.</p>
-<img class="diagram" src="{{ '/assets/img/mesh-how-it-works.png' | relative_url }}" alt="Four phones in a row about 20 metres apart. The first is live; each phone passes the stream to the next, so the reach is about 60 metres and grows with every phone." loading="lazy">
-
-<h2 id="platforms">Apps and status</h2>
-<p>One protocol, several apps. A phone, a PC and a Mac running MeshLive are meant to call each other and watch each other's streams. This is where each one honestly stands.</p>
-<div class="tablewrap">
-<table>
-  <thead><tr><th>Platform</th><th>Status</th><th>Get it</th></tr></thead>
-  <tbody>
-    <tr>
-      <td>Android 10+</td>
-      <td><span class="status strong">Beta</span> 0.5.0-beta.</td>
-      <td><a href="https://play.google.com/store/apps/details?id=io.github.meshlive.app">Google Play</a>, <a href="https://github.com/MeshLive/meshlive-android/releases/latest">GitHub releases</a>, <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/MeshLive/meshlive-android">Obtainium</a> · <a href="https://github.com/MeshLive/meshlive-android">source</a></td>
-    </tr>
-    <tr>
-      <td>Windows</td>
-      <td><span class="status strong">Beta</span> 0.3.1. Calls with Android phones passed hands-on checks in both directions; watching and going live are experimental and off by default. No Microsoft Store build yet.</td>
-      <td><a href="https://github.com/MeshLive/meshlive-windows/releases/latest">GitHub releases</a> (unsigned zip) · <a href="https://github.com/MeshLive/meshlive-windows">source</a></td>
-    </tr>
-    <tr>
-      <td>iPhone</td>
-      <td><span class="status">Source build</span> Tested in the iPhone simulator; not yet on a real iPhone. Testers wanted.</td>
-      <td>Build from <a href="https://github.com/MeshLive/meshlive-apple">source</a></td>
-    </tr>
-    <tr>
-      <td>Mac</td>
-      <td><span class="status">Experimental</span> A native Mac app in the same repository as the iPhone app. Calls with Android phones passed hands-on checks in both directions.</td>
-      <td>Build from <a href="https://github.com/MeshLive/meshlive-apple">source</a></td>
-    </tr>
-    <tr>
-      <td>Benchmarks</td>
-      <td>Measured results on real Android phones, with inputs you can regenerate (CC BY 4.0). Not every case passes yet, and the data says so.</td>
-      <td><a href="https://meshlive.github.io/meshlive-benchmarks/">Dashboard</a> · <a href="https://github.com/MeshLive/meshlive-benchmarks">data</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div class="notice">
-  <strong>Please read before relying on it.</strong> MeshLive is beta software and has not had an independent security review. On Android the ID a phone broadcasts is random and changes every 15 minutes (each app's privacy page says what it broadcasts), but a live stream shows its source to everyone who watches, and anyone whose call you accept learns who you are. Use it for testing and feedback, not where your safety depends on it.
-</div>
-
-<h2>Privacy</h2>
-<p>No accounts, no ads, no analytics, no servers. Calls and streams are encrypted, and your real name is only sent, encrypted, to the people you choose. Read the full <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>, or the technical detail in the <a href="https://github.com/MeshLive/meshlive-android/blob/main/docs/privacy.md">privacy document</a>. Child safety: see the <a href="{{ '/child-safety/' | relative_url }}">child safety standards</a>.</p>
-
-<h2>Help and contact</h2>
-<ul>
-  <li>Try it and file a device report: <a href="https://github.com/MeshLive/meshlive-android/issues/new/choose">Android</a>, <a href="https://github.com/MeshLive/meshlive-apple/issues/new/choose">iPhone and Mac</a>, <a href="https://github.com/MeshLive/meshlive-windows/issues/new/choose">Windows</a>. Reports where everything worked are just as useful.</li>
-  <li>Read the <a href="https://github.com/MeshLive/meshlive-android/blob/main/docs/user-guide.md">user guide</a> and the list of <a href="https://github.com/MeshLive/meshlive-android/blob/main/docs/devices.md">supported phones</a>.</li>
-  <li>Contribute: see the <a href="https://github.com/MeshLive/.github/blob/main/CONTRIBUTING.md">contributing guide</a>. Security problems go through each repository's private "Report a vulnerability" route, never a public issue.</li>
-  <li>Email <a href="mailto:meshlive.dev@gmail.com">meshlive.dev@gmail.com</a>.</li>
-</ul>
-
-</div>
+<script>
+document.querySelectorAll('a.play[data-video]').forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    var frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + link.dataset.video + '?autoplay=1&rel=0';
+    frame.title = link.querySelector('.sr').textContent.replace('Play video: ', '');
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    link.replaceWith(frame);
+  });
+});
+</script>
